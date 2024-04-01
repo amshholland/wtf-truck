@@ -1,0 +1,157 @@
+.AppHeader h1 {
+  color: white;
+  font-size: 2.5em;
+  text-align: center;
+  font-family: Staatliches;
+  margin: 10px 0;
+  filter: drop-shadow(0 0 3px rgb(0, 0, 0));
+}
+
+.AppHeader {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.8) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.GoogleUserDetails {
+  color: white;
+  font-family: Staatliches;
+}
+
+.GoogleUserPhoto img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.Greeting {
+  text-align: center;
+}
+
+.GoogleUserPhoto {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  
+}
+
+.GoogleUserPhoto img {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+  filter: drop-shadow(0 0 3px rgb(0, 0, 0));
+  border: 3px solid #efc058;
+}
+
+.GoogleAuth {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  position: absolute;
+  right: 0;
+}
+
+/* .AppHeader .signIn,
+.AppHeader .signOut {
+  font-size: 1em;
+  text-align: center;
+  border: none;
+  height: 2.2em;
+  border-radius: 4px;
+  background-color: #7dcf46;
+  color: white;
+  filter: drop-shadow(0 0 3px rgb(0, 0, 0));
+} */
+
+.AppHeader .signIn {
+  top: 0;
+  right: 0;
+  position: absolute;
+  z-index: 2;
+  margin: 5px;
+}
+
+.AppHeader .headerButton {
+  font-size: 1em;
+  text-align: center;
+  border: none;
+  height: 2.2em;
+  border-radius: 4px;
+  background-color: #7dcf46;
+  margin: 3px;
+  color: white;
+  filter: drop-shadow(0 0 3px rgb(0, 0, 0));
+}
+
+.AppHeader .logo {
+  height: 100PX;
+  filter: drop-shadow(0 0 3px rgb(0, 0, 0));
+}
+.TitleDiv {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  /* filter: drop-shadow(0 0 3px rgb(0, 0, 0)); */
+  width: 100%;
+  top: 0;
+}
+
+.gH {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  margin: 5px;
+}
+
+.gHLogo {
+  border-radius: 50%;
+  margin: 10px;
+  height: 50px;
+  width: 50px;
+  filter: drop-shadow(0 0 3px rgb(0, 0, 0));
+  border: 3px solid #efc058;
+  background-color: #efc058;
+}
+
+.headerBtn {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  filter: drop-shadow(0 0 3px rgb(0, 0, 0));
+}
+
+@media screen and (min-width: 768px) {
+  .TitleDiv {
+    position: relative;
+    margin-top: 0;
+    background-color: white;
+  }
+  .AppHeader .logo {
+    height: 100px;
+    filter: drop-shadow(0 0 3px rgb(0, 0, 0)); 
+  }
+  .AppHeader .logo {
+    margin: 0 auto;
+    height: 100px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+}

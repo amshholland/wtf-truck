@@ -1,0 +1,80 @@
+.App {
+    overflow-x: hidden;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.App .map {
+    position: relative;
+    height: 90%;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.map .fade {
+    z-index: 1;
+    position: absolute;
+    bottom: 0px;
+    display: block;
+    width: 100%;
+    height: 150px;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 100%);
+}
+
+.App .landing {
+    height: 100vh;
+}
+
+/* button {
+    border-radius: 4px;
+    background-color: #7dcf46;
+    margin: 3px;
+    color: white;
+    filter: drop-shadow(0 0 3px rgb(0, 0, 0));
+} */
+
+ .App .landingPage > * {
+    display: block;
+    
+}
+
+.App .listView {
+    margin-top: 15px;
+    font-size: 1em;
+    text-align: center;
+    width: 90vw;
+    border: none;
+    height: 2.2em;
+    border-radius: 4px;
+    background-color: #7dcf46;
+    color: white;
+    filter: drop-shadow(0 0 3px rgb(0, 0, 0));
+    z-index: 2;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .App .listBtnContainer {
+      display: flex;
+      justify-content: center;
+  }
+
+
+@media screen and (min-width: 768px) {
+    .App {
+        display: flex;
+        flex-direction: column;
+    }
+    /* .App .map {
+        height: 90vh;
+        width: 100%;
+    } */
+
+    .FoodTruckList #scrollToTop {
+        display: none;
+    }
+    
+}
