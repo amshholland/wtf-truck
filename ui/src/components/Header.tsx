@@ -3,11 +3,11 @@ import "./Header.css";
 import { useContext, useState } from "react";
 import { AuthContext } from "../context/auth-context";
 import { useNavigate } from "react-router-dom";
+import { GithubList } from "./GithubList/GithubList";
 
 function Header() {
 	// const { user } = useContext(AuthContext);
 	const [signOutToggle, setSignOutToggle] = useState("none");
-	const [ghToggle, setGhToggle] = useState("none");
 
 	function signOutDisplay() {
 		// if (signOutToggle === "none") {
@@ -17,35 +17,12 @@ function Header() {
 		// }
 	}
 
-	function gitHubDisplay() {
-		// if (ghToggle === "none") {
-		// 	setGhToggle("flex");
-		// } else if (ghToggle === "flex") {
-		// 	setGhToggle("none");
-		// }
-	}
-
 	// const navigate = useNavigate();
 	// const handleClick = () => navigate("/favorites");
 
 	return (
 		<header className="AppHeader" id="header">
-			<div className="gH">
-				<div className="gitHubLogo" onClick={() => gitHubDisplay()}>
-					<img className="gHLogo" src={process.env.PUBLIC_URL + "/GitHub-Mark-64px.png"} alt="GitHub Links" />
-				</div>
-				<div className="headerBtn" style={{ display: ghToggle }}>
-					<a href="https://github.com/amshholland">
-						<button className="headerButton">Amber Holland</button>
-					</a>
-					<a href="https://github.com/dairsmithgit">
-						<button className="headerButton">Dair Smith</button>
-					</a>
-					<a href="https://github.com/PatrickHumphries">
-						<button className="headerButton">Patrick Humphries</button>
-					</a>
-				</div>
-			</div>
+			<GithubList />
 			<div className="TitleDiv">
 				<div className="logoDiv">
 					<a href="/">

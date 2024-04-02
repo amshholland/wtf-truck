@@ -11,7 +11,7 @@ import { FavoriteContext } from "../context/favorite-context";
 import FoodTruckCard from "./FoodTruckCard";
 import { Truck } from "../model/dbModel";
 import { getTruckData } from "../service/WtfApiService";
-import {foodTruckList } from "../model/tests/truckTest";
+import { foodTruckList } from "../model/tests/truckTest";
 
 // commented out for CI/CD until favbutton is working 100%
 // import { FavoriteButton } from "./FavoriteButton";
