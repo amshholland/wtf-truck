@@ -3,7 +3,7 @@ import "./Header.css";
 import { useContext, useState } from "react";
 import { AuthContext } from "../context/auth-context";
 import { useNavigate } from "react-router-dom";
-import { GithubList } from "./GithubList/GithubList";
+import { ContributorList } from "./ContributorList/ContributorList";
 
 function Header() {
 	// const { user } = useContext(AuthContext);
@@ -22,7 +22,7 @@ function Header() {
 
 	return (
 		<header className="AppHeader" id="header">
-			<GithubList />
+			<ContributorList />
 			<div className="TitleDiv">
 				<div className="logoDiv">
 					<a href="/">
